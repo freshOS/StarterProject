@@ -21,6 +21,7 @@
 		991E307B1E3F5DA60099AD2A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307A1E3F5DA60099AD2A /* Photo.swift */; };
 		991E307D1E3F5E050099AD2A /* WSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307C1E3F5E050099AD2A /* WSApi.swift */; };
 		991E307F1E3F5E5B0099AD2A /* Photo+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307E1E3F5E5B0099AD2A /* Photo+JSON.swift */; };
+		991E30821E3F600F0099AD2A /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E30811E3F600F0099AD2A /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		991E307A1E3F5DA60099AD2A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		991E307C1E3F5E050099AD2A /* WSApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSApi.swift; sourceTree = "<group>"; };
 		991E307E1E3F5E5B0099AD2A /* Photo+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+JSON.swift"; sourceTree = "<group>"; };
+		991E30811E3F600F0099AD2A /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				991E304D1E3F57810099AD2A /* AppDelegate.swift */,
 				991E304F1E3F57810099AD2A /* ViewController.swift */,
 				991E30761E3F5C580099AD2A /* View.swift */,
+				991E30811E3F600F0099AD2A /* PhotoCell.swift */,
 				991E30781E3F5D730099AD2A /* Api.swift */,
 				991E307A1E3F5DA60099AD2A /* Photo.swift */,
 				991E30801E3F5E690099AD2A /* Api Implementation */,
@@ -220,6 +223,7 @@
 				991E307B1E3F5DA60099AD2A /* Photo.swift in Sources */,
 				991E307F1E3F5E5B0099AD2A /* Photo+JSON.swift in Sources */,
 				991E30501E3F57810099AD2A /* ViewController.swift in Sources */,
+				991E30821E3F600F0099AD2A /* PhotoCell.swift in Sources */,
 				991E304E1E3F57810099AD2A /* AppDelegate.swift in Sources */,
 				991E30791E3F5D730099AD2A /* Api.swift in Sources */,
 				991E30771E3F5C580099AD2A /* View.swift in Sources */,

@@ -16,6 +16,8 @@ class View: UIView {
         self.init(frame:CGRect.zero)
         sv(tableView)
         tableView.fillContainer()
+        tableView.register(PhotoCell.self, forCellReuseIdentifier: "PhotoCell")
+        tableView.estimatedRowHeight = 200 // Enable self-sizing cells
     }
 
 }

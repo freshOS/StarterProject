@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         v.tableView.dataSource = self
+        fetchPhotos()
+    }
+    
+    func fetchPhotos() {
         api.fetchPhotos().then { fetchedPhotos in
             self.photos = fetchedPhotos
         }.onError { e in
@@ -35,10 +39,12 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        let photo = photos[indexPath.row]
-        cell.textLabel?.text = photo.title
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as? PhotoCell {
+            let photo = photos[indexPath.row]
+            cell.title.text = photo.title
+            return cell
+        }
+        return UITableViewCell()
     }
 }
 
