@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.3.0"
+github "s4cha/Arrow" "3.0.3"
+github "freshOS/Stevia" "3.1.2"
+github "s4cha/then" "2.0.2"
+github "freshOS/ws" "2.0.1"

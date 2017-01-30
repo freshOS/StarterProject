@@ -9,19 +9,42 @@
 /* Begin PBXBuildFile section */
 		991E304E1E3F57810099AD2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E304D1E3F57810099AD2A /* AppDelegate.swift */; };
 		991E30501E3F57810099AD2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E304F1E3F57810099AD2A /* ViewController.swift */; };
-		991E30531E3F57810099AD2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991E30511E3F57810099AD2A /* Main.storyboard */; };
 		991E30551E3F57810099AD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991E30541E3F57810099AD2A /* Assets.xcassets */; };
 		991E30581E3F57810099AD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991E30561E3F57810099AD2A /* LaunchScreen.storyboard */; };
+		991E306D1E3F5BE50099AD2A /* Arrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E306C1E3F5BE40099AD2A /* Arrow.framework */; };
+		991E306F1E3F5BE60099AD2A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E306E1E3F5BE60099AD2A /* Alamofire.framework */; };
+		991E30711E3F5BE90099AD2A /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30701E3F5BE90099AD2A /* Stevia.framework */; };
+		991E30731E3F5BEB0099AD2A /* ws.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30721E3F5BEB0099AD2A /* ws.framework */; };
+		991E30751E3F5BEF0099AD2A /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30741E3F5BEF0099AD2A /* then.framework */; };
+		991E30771E3F5C580099AD2A /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E30761E3F5C580099AD2A /* View.swift */; };
+		991E30791E3F5D730099AD2A /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E30781E3F5D730099AD2A /* Api.swift */; };
+		991E307B1E3F5DA60099AD2A /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307A1E3F5DA60099AD2A /* Photo.swift */; };
+		991E307D1E3F5E050099AD2A /* WSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307C1E3F5E050099AD2A /* WSApi.swift */; };
+		991E307F1E3F5E5B0099AD2A /* Photo+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991E307E1E3F5E5B0099AD2A /* Photo+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		991E304A1E3F57810099AD2A /* StarterProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarterProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		991E304D1E3F57810099AD2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		991E304F1E3F57810099AD2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		991E30521E3F57810099AD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		991E30541E3F57810099AD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		991E30571E3F57810099AD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		991E30591E3F57810099AD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		991E30611E3F59840099AD2A /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = ../Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
+		991E30631E3F59870099AD2A /* ws.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ws.framework; path = ../Carthage/Build/iOS/ws.framework; sourceTree = "<group>"; };
+		991E30651E3F598A0099AD2A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		991E30671E3F598D0099AD2A /* Arrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arrow.framework; path = ../Carthage/Build/iOS/Arrow.framework; sourceTree = "<group>"; };
+		991E30691E3F59900099AD2A /* then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = then.framework; path = ../Carthage/Build/iOS/then.framework; sourceTree = "<group>"; };
+		991E306C1E3F5BE40099AD2A /* Arrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arrow.framework; path = Carthage/Build/iOS/Arrow.framework; sourceTree = "<group>"; };
+		991E306E1E3F5BE60099AD2A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		991E30701E3F5BE90099AD2A /* Stevia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stevia.framework; path = Carthage/Build/iOS/Stevia.framework; sourceTree = "<group>"; };
+		991E30721E3F5BEB0099AD2A /* ws.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ws.framework; path = Carthage/Build/iOS/ws.framework; sourceTree = "<group>"; };
+		991E30741E3F5BEF0099AD2A /* then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = then.framework; path = Carthage/Build/iOS/then.framework; sourceTree = "<group>"; };
+		991E30761E3F5C580099AD2A /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		991E30781E3F5D730099AD2A /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		991E307A1E3F5DA60099AD2A /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		991E307C1E3F5E050099AD2A /* WSApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSApi.swift; sourceTree = "<group>"; };
+		991E307E1E3F5E5B0099AD2A /* Photo+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photo+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +52,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991E30711E3F5BE90099AD2A /* Stevia.framework in Frameworks */,
+				991E30731E3F5BEB0099AD2A /* ws.framework in Frameworks */,
+				991E306F1E3F5BE60099AD2A /* Alamofire.framework in Frameworks */,
+				991E306D1E3F5BE50099AD2A /* Arrow.framework in Frameworks */,
+				991E30751E3F5BEF0099AD2A /* then.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +68,7 @@
 			children = (
 				991E304C1E3F57810099AD2A /* StarterProject */,
 				991E304B1E3F57810099AD2A /* Products */,
+				991E30601E3F59840099AD2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +85,41 @@
 			children = (
 				991E304D1E3F57810099AD2A /* AppDelegate.swift */,
 				991E304F1E3F57810099AD2A /* ViewController.swift */,
-				991E30511E3F57810099AD2A /* Main.storyboard */,
+				991E30761E3F5C580099AD2A /* View.swift */,
+				991E30781E3F5D730099AD2A /* Api.swift */,
+				991E307A1E3F5DA60099AD2A /* Photo.swift */,
+				991E30801E3F5E690099AD2A /* Api Implementation */,
 				991E30541E3F57810099AD2A /* Assets.xcassets */,
 				991E30561E3F57810099AD2A /* LaunchScreen.storyboard */,
 				991E30591E3F57810099AD2A /* Info.plist */,
 			);
 			path = StarterProject;
+			sourceTree = "<group>";
+		};
+		991E30601E3F59840099AD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991E30741E3F5BEF0099AD2A /* then.framework */,
+				991E30721E3F5BEB0099AD2A /* ws.framework */,
+				991E30701E3F5BE90099AD2A /* Stevia.framework */,
+				991E306E1E3F5BE60099AD2A /* Alamofire.framework */,
+				991E306C1E3F5BE40099AD2A /* Arrow.framework */,
+				991E30691E3F59900099AD2A /* then.framework */,
+				991E30671E3F598D0099AD2A /* Arrow.framework */,
+				991E30651E3F598A0099AD2A /* Alamofire.framework */,
+				991E30631E3F59870099AD2A /* ws.framework */,
+				991E30611E3F59840099AD2A /* Stevia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		991E30801E3F5E690099AD2A /* Api Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				991E307C1E3F5E050099AD2A /* WSApi.swift */,
+				991E307E1E3F5E5B0099AD2A /* Photo+JSON.swift */,
+			);
+			name = "Api Implementation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +132,7 @@
 				991E30461E3F57810099AD2A /* Sources */,
 				991E30471E3F57810099AD2A /* Frameworks */,
 				991E30481E3F57810099AD2A /* Resources */,
+				991E305F1E3F58F20099AD2A /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -125,33 +184,51 @@
 			files = (
 				991E30581E3F57810099AD2A /* LaunchScreen.storyboard in Resources */,
 				991E30551E3F57810099AD2A /* Assets.xcassets in Resources */,
-				991E30531E3F57810099AD2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		991E305F1E3F58F20099AD2A /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ws.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Arrow.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/then.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		991E30461E3F57810099AD2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991E307D1E3F5E050099AD2A /* WSApi.swift in Sources */,
+				991E307B1E3F5DA60099AD2A /* Photo.swift in Sources */,
+				991E307F1E3F5E5B0099AD2A /* Photo+JSON.swift in Sources */,
 				991E30501E3F57810099AD2A /* ViewController.swift in Sources */,
 				991E304E1E3F57810099AD2A /* AppDelegate.swift in Sources */,
+				991E30791E3F5D730099AD2A /* Api.swift in Sources */,
+				991E30771E3F5C580099AD2A /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		991E30511E3F57810099AD2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				991E30521E3F57810099AD2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		991E30561E3F57810099AD2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,7 +337,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = StarterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +351,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = StarterProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
