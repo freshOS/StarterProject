@@ -41,7 +41,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as? PhotoCell {
             let photo = photos[indexPath.row]
-            cell.title.text = photo.title
+            cell.render(with: photo)
             return cell
         }
         return UITableViewCell()
