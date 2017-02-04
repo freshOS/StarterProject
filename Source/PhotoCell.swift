@@ -11,6 +11,8 @@ import Stevia
 // This is our custom UITableViewCell.
 // This is what replaces the heavy xml Storyboard file when you dev views in code.
 
+// Get the full documentation at https://github.com/freshOS/Stevia
+
 class PhotoCell: UITableViewCell {
     
     let title = UILabel()

@@ -13,6 +13,8 @@ import then
 // Yes! This is all that's needed to get nice Swift models from a JSON api!!!!
 // Thanks to the power of generics, ws will return what you want! (Void, JSON, Model, [Model] etc)
 
+// Get the full documentation at https://github.com/freshOS/ws
+
 class WSApi: ApiInterface {
     
     let ws = WS("https://jsonplaceholder.typicode.com") // Set the Webservice base URL

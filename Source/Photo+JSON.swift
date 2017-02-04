@@ -15,6 +15,8 @@ import Arrow
 // The dot syntax also works for hassle-free parsing!
 // `property <-- json[".resource.url.medium"]`
 
+// Get the full documentation at https://github.com/freshOS/Arrow
+
 extension Photo : ArrowParsable {
     
     public mutating func deserialize(_ json: JSON) {

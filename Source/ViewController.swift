@@ -27,9 +27,13 @@ class ViewController: UIViewController {
         
         // And we fetch the photos.
         fetchPhotos()
+        
+        
+        NSLocalizedString("Letsgo", comment: "")
     }
     
     func fetchPhotos() {
+        // Get the full documentation at https://github.com/freshOS/then
         api.fetchPhotos().then { fetchedPhotos in
             // Yay, we got our photos !
             self.photos = fetchedPhotos
