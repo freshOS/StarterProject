@@ -8,6 +8,7 @@
 
 import Foundation
 
+// This is the bare Photo model.
 struct Photo {
     var identifier = 0
     var title = ""

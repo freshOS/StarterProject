@@ -8,6 +8,13 @@
 
 import Arrow
 
+// This Is our JSON to Model Mapping code. No rocket science here :)
+// Notice that Arrow automatically parses the json values to the right types,
+// might there be native, custom or array types !
+// No `if let` s, no casting `as ? T`, no iteration on collections \o/
+// The dot syntax also works for hassle-free parsing!
+// `property <-- json[".resource.url.medium"]`
+
 extension Photo : ArrowParsable {
     
     public mutating func deserialize(_ json: JSON) {

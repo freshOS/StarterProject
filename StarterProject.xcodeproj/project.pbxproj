@@ -90,16 +90,14 @@
 		991E304C1E3F57810099AD2A /* StarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				99EC7ADB1E3F71DD008BBBA5 /* Assets.xcassets */,
-				99EC7ADC1E3F71DD008BBBA5 /* Base.lproj */,
-				99EC7AE01E3F71DD008BBBA5 /* Photo.swift */,
+				999127BB1E461FBC007E9B00 /* Resources */,
 				99EC7AE11E3F71DD008BBBA5 /* AppDelegate.swift */,
-				99EC7AE21E3F71DD008BBBA5 /* Api.swift */,
+				99EC7AE01E3F71DD008BBBA5 /* Photo.swift */,
+				99EC7AE61E3F71DD008BBBA5 /* ViewController.swift */,
 				99EC7AE41E3F71DD008BBBA5 /* View.swift */,
 				99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */,
-				99EC7AE61E3F71DD008BBBA5 /* ViewController.swift */,
 				99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */,
-				99EC7AE81E3F71DD008BBBA5 /* Info.plist */,
+				99EC7AE21E3F71DD008BBBA5 /* Api.swift */,
 				991E30801E3F5E690099AD2A /* Api Implementation */,
 			);
 			path = StarterProject;
@@ -130,6 +128,16 @@
 				99EC7ADF1E3F71DD008BBBA5 /* Photo+JSON.swift */,
 			);
 			name = "Api Implementation";
+			sourceTree = "<group>";
+		};
+		999127BB1E461FBC007E9B00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99EC7AE81E3F71DD008BBBA5 /* Info.plist */,
+				99EC7ADB1E3F71DD008BBBA5 /* Assets.xcassets */,
+				99EC7ADC1E3F71DD008BBBA5 /* Base.lproj */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		99EC7ADC1E3F71DD008BBBA5 /* Base.lproj */ = {
