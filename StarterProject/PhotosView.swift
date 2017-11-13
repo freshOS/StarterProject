@@ -1,5 +1,5 @@
 //
-//  View.swift
+//  PhotosView.swift
 //  StarterProject
 //
 //  Created by Sacha Durand Saint Omer on 30/01/2017.
@@ -13,8 +13,9 @@ import Stevia
 
 // Get the full documentation at https://github.com/freshOS/Stevia
 
-class View: UIView {
+class PhotosView: UIView {
     
+    let refreshControl = UIRefreshControl()
     let tableView = UITableView()
     
     convenience init() {
@@ -23,6 +24,8 @@ class View: UIView {
         // Here we use Stevia to make our constraints more readable and maintainable.
         sv(tableView)
         tableView.fillContainer()
+        
+        tableView.addSubview(refreshControl)
         
 
         // Here is how it would look with native autolayout 🙈 :

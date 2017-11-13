@@ -114,16 +114,16 @@ struct LocalizationFiles {
                 if let ignoredMatch = ignoredRegex?.firstMatch(in:line,
                                                                        options: [],
                                                                        range: range) {
-                    let key = (line as NSString).substring(with: ignoredMatch.rangeAt(1))
+                    let key = (line as NSString).substring(with: ignoredMatch.range(at:1))
                     ignoredTranslation.append(key)
                 }
                 if let firstMatch = regex?.firstMatch(in: line, options: [], range: range) {
-                    let key = (line as NSString).substring(with: firstMatch.rangeAt(1))
-                    let value = (line as NSString).substring(with: firstMatch.rangeAt(2))
+                    let key = (line as NSString).substring(with: firstMatch.range(at:1))
+                    let value = (line as NSString).substring(with: firstMatch.range(at:2))
                     if let _ =  keyValue[key] {
                         let str = "\(path)/\(name).lproj"
                         + "/Localizable.strings:\(linesNumbers[key]!): "
-                        + "error : [Redundance] \"\(key)\" "
+                        + "error: [Redundance] \"\(key)\" "
                         + "is redundant in \(name.uppercased()) file"
                         print(str)
                         numberOfErrors += 1
@@ -223,7 +223,7 @@ while let swiftFileLocation = enumerator?.nextObject() as? String {
                                                 range: range,
                                                 using: { (result, _, _) in
                     if let r = result {
-                        let value = (string as NSString).substring(with:r.rangeAt(1))
+                        let value = (string as NSString).substring(with:r.range(at:1))
                         localizedStrings.append(value)
                     }
                 })
@@ -242,7 +242,7 @@ var replaceCommand = "\"("
 var counter = 0
 for v in unused {
     var str = "\(path)/\(masterLocalizationfile.name).lproj/Localizable.strings:\(masterLocalizationfile.linesNumbers[v]!): "
-    str += "error : [Unused Key] \"\(v)\" is never used"
+    str += "error: [Unused Key] \"\(v)\" is never used"
     print(str)
     numberOfErrors += 1
     if counter != 0 {
@@ -265,7 +265,7 @@ for file in localizationFiles {
         if let v = file.keyValue[k] {
             if v == masterLocalizationfile.keyValue[k] {
                 if !ignoredFromSameTranslation[file.name]!.contains(k) {
-                    var str = "\(path)/\(file.name).lproj/Localizable.strings"
+                    let str = "\(path)/\(file.name).lproj/Localizable.strings"
                     + ":\(file.linesNumbers[k]!): "
                     + "warning: [Potentialy Untranslated] \"\(k)\""
                     + "in \(file.name.uppercased()) file doesn't seem to be localized"

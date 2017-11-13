@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PhotosVC.swift
 //  StarterProject
 //
 //  Created by Sacha Durand Saint Omer on 30/01/2017.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PhotosVC: UIViewController {
     
     // Since we're not using storyboards, we need to use our custom View throught
     // the `loadView` function.
     // Here we decide to call our custome view `v`. It's simple and straighforward.
-    var v = View()
+    var v = PhotosView()
     override func loadView() { view = v }
     
     // We need to store an array of Photos
@@ -22,32 +22,36 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        v.refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        
         // After the view loads, we set ourselves as the delegate of the Tableview.
         v.tableView.dataSource = self
         
         // And we fetch the photos.
-        fetchPhotos()
+        refresh()
         
         
-        NSLocalizedString("Letsgo", comment: "")
+        _ = NSLocalizedString("Letsgo", comment: "")
     }
     
-    func fetchPhotos() {
+    @objc
+    func refresh() {
         // Get the full documentation at https://github.com/freshOS/then
-        api.fetchPhotos().then { fetchedPhotos in
+        Photo.fetchPhotos().then { fetchedPhotos in
             // Yay, we got our photos !
             self.photos = fetchedPhotos
-        }.onError { e in
-            // An error occured :/
-            print(e)
-        }.finally {
-            // In any case, reload the tableView
-            self.v.tableView.reloadData()
+            }.onError { e in
+                // An error occured :/
+                print(e)
+            }.finally {
+                // In any case, reload the tableView
+                self.v.tableView.reloadData()
+                self.v.refreshControl.endRefreshing()
         }
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension PhotosVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return photos.count

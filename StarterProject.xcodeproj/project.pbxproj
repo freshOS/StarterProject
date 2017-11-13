@@ -14,6 +14,7 @@
 		9948C3581E3FB34B005B0937 /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30741E3F5BEF0099AD2A /* then.framework */; };
 		9948C3591E3FB34E005B0937 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30701E3F5BE90099AD2A /* Stevia.framework */; };
 		9964CFA61E4669B800E051AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9964CFA31E4669B800E051AD /* Localizable.strings */; };
+		998CF1821FB9EF070071B21B /* Photo+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CF1811FB9EF070071B21B /* Photo+Api.swift */; };
 		99EC7AE91E3F71DD008BBBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC7ADB1E3F71DD008BBBA5 /* Assets.xcassets */; };
 		99EC7AEA1E3F71DD008BBBA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EC7ADD1E3F71DD008BBBA5 /* LaunchScreen.storyboard */; };
 		99EC7AEB1E3F71DD008BBBA5 /* Photo+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7ADF1E3F71DD008BBBA5 /* Photo+JSON.swift */; };
@@ -21,9 +22,9 @@
 		99EC7AED1E3F71DD008BBBA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE11E3F71DD008BBBA5 /* AppDelegate.swift */; };
 		99EC7AEE1E3F71DD008BBBA5 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE21E3F71DD008BBBA5 /* Api.swift */; };
 		99EC7AEF1E3F71DD008BBBA5 /* WSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE31E3F71DD008BBBA5 /* WSApi.swift */; };
-		99EC7AF01E3F71DD008BBBA5 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE41E3F71DD008BBBA5 /* View.swift */; };
+		99EC7AF01E3F71DD008BBBA5 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE41E3F71DD008BBBA5 /* PhotosView.swift */; };
 		99EC7AF11E3F71DD008BBBA5 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */; };
-		99EC7AF21E3F71DD008BBBA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE61E3F71DD008BBBA5 /* ViewController.swift */; };
+		99EC7AF21E3F71DD008BBBA5 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE61E3F71DD008BBBA5 /* PhotosVC.swift */; };
 		99EC7AF31E3F71DD008BBBA5 /* PhotoCell+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,17 +43,18 @@
 		991E30831E3F63800099AD2A /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		9964CFA41E4669B800E051AD /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/Languages/es.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		9964CFA51E4669B800E051AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Languages/en.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		998CF1811FB9EF070071B21B /* Photo+Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Photo+Api.swift"; path = "StarterProject/Api/Photo+Api.swift"; sourceTree = SOURCE_ROOT; };
 		99EC7ADB1E3F71DD008BBBA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Source/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		99EC7ADE1E3F71DD008BBBA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99EC7ADF1E3F71DD008BBBA5 /* Photo+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+JSON.swift"; path = "Source/Photo+JSON.swift"; sourceTree = SOURCE_ROOT; };
-		99EC7AE01E3F71DD008BBBA5 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = Source/Photo.swift; sourceTree = SOURCE_ROOT; };
+		99EC7AE01E3F71DD008BBBA5 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = StarterProject/Photo.swift; sourceTree = SOURCE_ROOT; };
 		99EC7AE11E3F71DD008BBBA5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Source/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		99EC7AE21E3F71DD008BBBA5 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = Source/Api.swift; sourceTree = SOURCE_ROOT; };
+		99EC7AE21E3F71DD008BBBA5 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Api.swift; path = StarterProject/StarterProject/Api/Api.swift; sourceTree = SOURCE_ROOT; };
 		99EC7AE31E3F71DD008BBBA5 /* WSApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WSApi.swift; path = Source/WSApi.swift; sourceTree = SOURCE_ROOT; };
-		99EC7AE41E3F71DD008BBBA5 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = Source/View.swift; sourceTree = SOURCE_ROOT; };
-		99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = Source/PhotoCell.swift; sourceTree = SOURCE_ROOT; };
-		99EC7AE61E3F71DD008BBBA5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Source/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PhotoCell+Photo.swift"; path = "Source/PhotoCell+Photo.swift"; sourceTree = SOURCE_ROOT; };
+		99EC7AE41E3F71DD008BBBA5 /* PhotosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosView.swift; path = StarterProject/PhotosView.swift; sourceTree = SOURCE_ROOT; };
+		99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = StarterProject/PhotoCell.swift; sourceTree = SOURCE_ROOT; };
+		99EC7AE61E3F71DD008BBBA5 /* PhotosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotosVC.swift; path = StarterProject/PhotosVC.swift; sourceTree = SOURCE_ROOT; };
+		99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PhotoCell+Photo.swift"; path = "StarterProject/PhotoCell+Photo.swift"; sourceTree = SOURCE_ROOT; };
 		99EC7AE81E3F71DD008BBBA5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -93,15 +95,11 @@
 		991E304C1E3F57810099AD2A /* StarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				999127BB1E461FBC007E9B00 /* Resources */,
 				99EC7AE11E3F71DD008BBBA5 /* AppDelegate.swift */,
-				99EC7AE01E3F71DD008BBBA5 /* Photo.swift */,
-				99EC7AE61E3F71DD008BBBA5 /* ViewController.swift */,
-				99EC7AE41E3F71DD008BBBA5 /* View.swift */,
-				99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */,
-				99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */,
-				99EC7AE21E3F71DD008BBBA5 /* Api.swift */,
+				998CF1831FB9EF610071B21B /* Photos */,
+				998CF1801FB9EEF90071B21B /* Api */,
 				991E30801E3F5E690099AD2A /* Api Implementation */,
+				999127BB1E461FBC007E9B00 /* Resources */,
 			);
 			path = StarterProject;
 			sourceTree = "<group>";
@@ -131,6 +129,28 @@
 				99EC7ADF1E3F71DD008BBBA5 /* Photo+JSON.swift */,
 			);
 			name = "Api Implementation";
+			sourceTree = "<group>";
+		};
+		998CF1801FB9EEF90071B21B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				99EC7AE21E3F71DD008BBBA5 /* Api.swift */,
+				998CF1811FB9EF070071B21B /* Photo+Api.swift */,
+			);
+			name = Api;
+			path = StarterProject/Api;
+			sourceTree = "<group>";
+		};
+		998CF1831FB9EF610071B21B /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				99EC7AE61E3F71DD008BBBA5 /* PhotosVC.swift */,
+				99EC7AE01E3F71DD008BBBA5 /* Photo.swift */,
+				99EC7AE41E3F71DD008BBBA5 /* PhotosView.swift */,
+				99EC7AE51E3F71DD008BBBA5 /* PhotoCell.swift */,
+				99EC7AE71E3F71DD008BBBA5 /* PhotoCell+Photo.swift */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 		999127BB1E461FBC007E9B00 /* Resources */ = {
@@ -182,7 +202,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = freshOS;
 				TargetAttributes = {
 					991E30491E3F57810099AD2A = {
@@ -266,11 +286,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				99EC7AED1E3F71DD008BBBA5 /* AppDelegate.swift in Sources */,
-				99EC7AF01E3F71DD008BBBA5 /* View.swift in Sources */,
+				998CF1821FB9EF070071B21B /* Photo+Api.swift in Sources */,
+				99EC7AF01E3F71DD008BBBA5 /* PhotosView.swift in Sources */,
 				99EC7AF11E3F71DD008BBBA5 /* PhotoCell.swift in Sources */,
 				99EC7AEB1E3F71DD008BBBA5 /* Photo+JSON.swift in Sources */,
 				99EC7AEE1E3F71DD008BBBA5 /* Api.swift in Sources */,
-				99EC7AF21E3F71DD008BBBA5 /* ViewController.swift in Sources */,
+				99EC7AF21E3F71DD008BBBA5 /* PhotosVC.swift in Sources */,
 				99EC7AEF1E3F71DD008BBBA5 /* WSApi.swift in Sources */,
 				99EC7AEC1E3F71DD008BBBA5 /* Photo.swift in Sources */,
 				99EC7AF31E3F71DD008BBBA5 /* PhotoCell+Photo.swift in Sources */,
@@ -310,7 +331,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -318,7 +341,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -347,6 +374,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -361,7 +389,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -369,7 +399,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -390,6 +424,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -405,7 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -419,7 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

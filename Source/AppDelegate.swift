@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Here we're not using storyboards so that's the code needed to show
         // the first ViewController on screen.
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = PhotosVC()
         window?.makeKeyAndVisible()
         return true
     }

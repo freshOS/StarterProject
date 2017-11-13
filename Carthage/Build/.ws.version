@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "d0ef3450cd12ddf9d73675b2af6bb832886169792509297a6b6a5c47a4d7a515",
+      "name" : "ws"
+    }
+  ],
+  "commitish" : "3.0.0",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}
