@@ -1,9 +1,31 @@
 {
-  "commitish" : "4.9.0",
+  "Mac" : [
+    {
+      "name" : "Kingfisher",
+      "hash" : "315a5ee8f23980016fc5b9136b2f63640574a7fbb2fa6d677ef0ad3f041b6236",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "Kingfisher",
+      "hash" : "b5abacf09915b2036b629f803174111dbf7c769c79d84be8dc77c8ce85c1fac0",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "Kingfisher",
+      "hash" : "ae7a6919363d782fc9d771196b5ebeb267d33fda79c54efe4bc8fa56860fe825",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+    }
+  ],
+  "commitish" : "5.4.0",
   "iOS" : [
     {
       "name" : "Kingfisher",
-      "hash" : "62cafaaec17ca930266a99ed20227ea7468b71cc047a38c60870dd33a2c7ccd9"
+      "hash" : "40bd8cafae13b0d733cd7e507158db24eb38a5bda4e380806bed5ba40c1e4642",
+      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
     }
   ]
 }

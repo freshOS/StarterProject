@@ -1,3 +1,3 @@
-github "freshOS/ws" "3.2.0"
-github "freshOS/Stevia" "4.4.0"
-github "onevcat/Kingfisher" "4.9.0"
+github "freshOS/ws" "5.0.0"
+github "freshOS/Stevia" "4.5.0"
+github "onevcat/Kingfisher" "5.4.0"
