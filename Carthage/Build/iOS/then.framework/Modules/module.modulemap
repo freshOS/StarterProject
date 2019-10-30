@@ -1,11 +1,11 @@
-framework module then {
-  umbrella header "then.h"
+framework module Then {
+  umbrella header "Then.h"
 
   export *
   module * { export * }
 }
 
-module then.Swift {
-    header "then-Swift.h"
+module Then.Swift {
+    header "Then-Swift.h"
     requires objc
 }

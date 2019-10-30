@@ -8,12 +8,12 @@
   "tvOS" : [
 
   ],
-  "commitish" : "5.0.0",
+  "commitish" : "5.1.0",
   "iOS" : [
     {
       "name" : "ws",
-      "hash" : "7efe29bb7e96e6bb7973cdb593b2339ea878cf1dda0d7131d60d9cbb00fde9cd",
-      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+      "hash" : "159bd691cb837288a9abebff720753bcb59fb8a49b27792e6e43e29062039a61",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ]
 }

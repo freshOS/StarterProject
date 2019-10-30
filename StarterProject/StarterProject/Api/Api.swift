@@ -6,7 +6,7 @@
 //  Copyright © 2017 freshOS. All rights reserved.
 //
 
-import then
+import Then
 
 // This is our Api interface.
 // In theory we could use ws directly in controllers but this wouldn't be very clean.

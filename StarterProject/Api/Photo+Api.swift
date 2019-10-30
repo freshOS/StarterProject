@@ -6,7 +6,7 @@
 //  Copyright © 2017 freshOS. All rights reserved.
 //
 
-import then
+import Then
 
 // This is not absolutely needed but it's nice to handle data through
 // the models.

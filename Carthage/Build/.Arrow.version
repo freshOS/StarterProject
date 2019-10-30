@@ -8,12 +8,12 @@
   "tvOS" : [
 
   ],
-  "commitish" : "5.0.0",
+  "commitish" : "5.1.0",
   "iOS" : [
     {
       "name" : "Arrow",
-      "hash" : "c8a79518a260ca07fb4cbed30b5b76ee9d22c859569a4cba1f9829690fce00a2",
-      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+      "hash" : "de108e0b1d0262aac62e0fbd8a8e7b28d2be053619970216badbbbea8a7ffad2",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ]
 }

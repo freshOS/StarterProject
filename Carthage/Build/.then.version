@@ -1,9 +1,9 @@
 {
   "Mac" : [
     {
-      "name" : "then",
-      "hash" : "e11cb27581d6121c7b075929d9754d62cfacd2b3183b009b7a3a94a20ed2a8e6",
-      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+      "name" : "Then",
+      "hash" : "0bbfdc420f2ade56986da7060c5bdf155551632cf10056193a6c9355db9a1d66",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ],
   "watchOS" : [
@@ -11,17 +11,17 @@
   ],
   "tvOS" : [
     {
-      "name" : "then",
-      "hash" : "0a20a78581759ff2943d0b264fa4d9d998f3e583669948272f9add58ff3a55ba",
-      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+      "name" : "Then",
+      "hash" : "785c95ad080e6247ec73a3574ad53958267eedb2f620f2214c265a09dcbfb3db",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ],
-  "commitish" : "5.0.0",
+  "commitish" : "5.1.0",
   "iOS" : [
     {
-      "name" : "then",
-      "hash" : "dc7eb9abb9af2a1eb26d9a9110b92b58f83e2cd56530b49d0d335ab96e30dced",
-      "swiftToolchainVersion" : "5.0 (swiftlang-1001.0.69.5 clang-1001.0.46.3)"
+      "name" : "Then",
+      "hash" : "7cf52360ddf9ef0e3ae587d9a09ab100708c169417a7ac804069410207dae640",
+      "swiftToolchainVersion" : "5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)"
     }
   ]
 }

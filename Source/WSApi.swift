@@ -7,7 +7,7 @@
 //
 
 import ws
-import then
+import Then
 
 // This is our JSON Api Code
 // Yes! This is all that's needed to get nice Swift models from a JSON api!!!!
