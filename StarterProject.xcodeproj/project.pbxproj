@@ -255,7 +255,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ws.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Arrow.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/then.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Then.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = "Carthage Run Script";
