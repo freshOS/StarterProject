@@ -3,16 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9948C3541E3FB33F005B0937 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E306E1E3F5BE60099AD2A /* Alamofire.framework */; };
-		9948C3551E3FB341005B0937 /* Arrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E306C1E3F5BE40099AD2A /* Arrow.framework */; };
-		9948C3561E3FB344005B0937 /* ws.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30721E3F5BEB0099AD2A /* ws.framework */; };
-		9948C3571E3FB348005B0937 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30831E3F63800099AD2A /* Kingfisher.framework */; };
-		9948C3581E3FB34B005B0937 /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30741E3F5BEF0099AD2A /* then.framework */; };
-		9948C3591E3FB34E005B0937 /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991E30701E3F5BE90099AD2A /* Stevia.framework */; };
+		991F969423D060820038EE45 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 991F969323D060820038EE45 /* Kingfisher */; };
+		991F969723D061C30038EE45 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 991F969623D061C30038EE45 /* Stevia */; };
+		991F969A23D062C80038EE45 /* ws in Frameworks */ = {isa = PBXBuildFile; productRef = 991F969923D062C80038EE45 /* ws */; };
 		9964CFA61E4669B800E051AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9964CFA31E4669B800E051AD /* Localizable.strings */; };
 		998CF1821FB9EF070071B21B /* Photo+Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998CF1811FB9EF070071B21B /* Photo+Api.swift */; };
 		99EC7AE91E3F71DD008BBBA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99EC7ADB1E3F71DD008BBBA5 /* Assets.xcassets */; };
@@ -63,12 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9948C3591E3FB34E005B0937 /* Stevia.framework in Frameworks */,
-				9948C3561E3FB344005B0937 /* ws.framework in Frameworks */,
-				9948C3541E3FB33F005B0937 /* Alamofire.framework in Frameworks */,
-				9948C3551E3FB341005B0937 /* Arrow.framework in Frameworks */,
-				9948C3581E3FB34B005B0937 /* then.framework in Frameworks */,
-				9948C3571E3FB348005B0937 /* Kingfisher.framework in Frameworks */,
+				991F969723D061C30038EE45 /* Stevia in Frameworks */,
+				991F969423D060820038EE45 /* Kingfisher in Frameworks */,
+				991F969A23D062C80038EE45 /* ws in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,13 +178,17 @@
 				991E30461E3F57810099AD2A /* Sources */,
 				991E30471E3F57810099AD2A /* Frameworks */,
 				991E30481E3F57810099AD2A /* Resources */,
-				991E305F1E3F58F20099AD2A /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = StarterProject;
+			packageProductDependencies = (
+				991F969323D060820038EE45 /* Kingfisher */,
+				991F969623D061C30038EE45 /* Stevia */,
+				991F969923D062C80038EE45 /* ws */,
+			);
 			productName = StarterProject;
 			productReference = 991E304A1E3F57810099AD2A /* StarterProject.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +220,11 @@
 				es,
 			);
 			mainGroup = 991E30411E3F57810099AD2A;
+			packageReferences = (
+				991F969223D060820038EE45 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				991F969523D061C30038EE45 /* XCRemoteSwiftPackageReference "Stevia" */,
+				991F969823D062C80038EE45 /* XCRemoteSwiftPackageReference "ws" */,
+			);
 			productRefGroup = 991E304B1E3F57810099AD2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,26 +248,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		991E305F1E3F58F20099AD2A /* Carthage Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Stevia.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ws.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Arrow.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Then.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
-			);
-			name = "Carthage Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
 		999127BC1E4666C7007E9B00 /* Localisation Safety net Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,7 +411,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -439,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -453,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshOS.StarterProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -485,6 +475,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		991F969223D060820038EE45 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 5.12.0;
+			};
+		};
+		991F969523D061C30038EE45 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = exactVersion;
+				version = 4.8.0;
+			};
+		};
+		991F969823D062C80038EE45 /* XCRemoteSwiftPackageReference "ws" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/ws";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		991F969323D060820038EE45 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991F969223D060820038EE45 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		991F969623D061C30038EE45 /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991F969523D061C30038EE45 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+		991F969923D062C80038EE45 /* ws */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 991F969823D062C80038EE45 /* XCRemoteSwiftPackageReference "ws" */;
+			productName = ws;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 991E30421E3F57810099AD2A /* Project object */;
 }
