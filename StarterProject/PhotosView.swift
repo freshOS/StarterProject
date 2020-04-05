@@ -14,13 +14,13 @@ import Stevia
 
 // Get the full documentation at https://github.com/freshOS/Stevia
 
-class PhotosView: UIView {
+final class PhotosView: UIView {
     
     let refreshControl = UIRefreshControl()
     let tableView = UITableView()
     
     convenience init() {
-        self.init(frame:CGRect.zero)
+        self.init(frame: .zero)
         
         // Here we use Stevia to make our constraints more readable and maintainable.
         sv(tableView)

@@ -8,12 +8,12 @@
 
 import UIKit
 
-class PhotosVC: UIViewController {
+final class PhotosVC: UIViewController {
     
     // Since we're not using storyboards, we need to use our custom View throught
     // the `loadView` function.
     // Here we decide to call our custome view `v`. It's simple and straighforward.
-    var v = PhotosView()
+    private let v = PhotosView()
     override func loadView() { view = v }
     
     // We need to store an array of Photos
@@ -35,7 +35,7 @@ class PhotosVC: UIViewController {
     }
     
     @objc
-    func refresh() {
+    private func refresh() {
         // Get the full documentation at https://github.com/freshOS/then
         Photo.fetchPhotos().then { fetchedPhotos in
             // Yay, we got our photos !

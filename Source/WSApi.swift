@@ -15,9 +15,9 @@ import Then
 
 // Get the full documentation at https://github.com/freshOS/ws
 
-class WSApi: ApiInterface {
+final class WSApi: ApiInterface {
     
-    let ws = WS("https://jsonplaceholder.typicode.com") // Set the Webservice base URL
+    private let ws = WS("https://jsonplaceholder.typicode.com") // Set the Webservice base URL
     
     init() {
         // This will print network requests & responses to the console.

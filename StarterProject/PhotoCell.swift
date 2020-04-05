@@ -14,11 +14,11 @@ import Stevia
 
 // Get the full documentation at https://github.com/freshOS/Stevia
 
-class PhotoCell: UITableViewCell {
+final class PhotoCell: UITableViewCell {
     
     let title = UILabel()
     let photo = UIImageView()
-    
+
     required init?(coder aDecoder: NSCoder) { super.init(coder: aDecoder)}
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
