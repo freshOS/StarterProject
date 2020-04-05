@@ -13,4 +13,4 @@ The App is a simple list of posts from the network, it showcases :
 
 ## Usage
 `git clone https://github.com/freshOS/StarterProject.git`
-or download zip
+or [download zip](https://github.com/freshOS/StarterProject/archive/master.zip).
