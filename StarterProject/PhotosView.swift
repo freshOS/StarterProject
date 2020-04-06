@@ -23,7 +23,9 @@ final class PhotosView: UIView {
         self.init(frame: .zero)
         
         // Here we use Stevia to make our constraints more readable and maintainable.
-        sv(tableView)
+        subviews {
+            tableView
+        }
         tableView.fillContainer()
         
         tableView.addSubview(refreshControl)

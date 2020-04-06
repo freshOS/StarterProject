@@ -27,20 +27,19 @@ final class PhotoCell: UITableViewCell {
         // and prepares them for autolayout use.
         // This has the advantage of being very visual. Indeed, sv calls can be nested
         // and you see the view hierarchy right away.
-        sv(
-            title,
+        subviews {
+            title
             photo
-        )
+        }
         
         // Here we layout the cell.
-        layout(
-            16,
-            |-16-title-16-|,
-            16,
-            |-16-photo-16-|,
+        layout {
             16
-        )
-        photo.heightEqualsWidth()
+            |-16-title-16-|
+            16
+            |-16-photo.heightEqualsWidth()-16-|
+            16
+        }
         
         // The advantages are many:
         // - The layout is visual

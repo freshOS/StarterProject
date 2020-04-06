@@ -490,7 +490,7 @@
 			repositoryURL = "https://github.com/freshOS/Stevia";
 			requirement = {
 				kind = exactVersion;
-				version = 4.8.0;
+				version = 5.0.0;
 			};
 		};
 		991F969823D062C80038EE45 /* XCRemoteSwiftPackageReference "ws" */ = {
