@@ -17,7 +17,7 @@ import Arrow
 
 // Get the full documentation at https://github.com/freshOS/Arrow
 
-extension Photo : ArrowParsable {
+extension Photo: ArrowParsable {
     
     public mutating func deserialize(_ json: JSON) {
         identifier <-- json["id"]

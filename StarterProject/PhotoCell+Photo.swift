@@ -9,7 +9,7 @@
 import Foundation
 import Kingfisher
 
-// Here we populate our TableView cell with our Modle Data.
+// Here we populate our TableView cell with our Model Data.
 // This could be in the view controller but we like to keep 
 // it separate. :). Plus this can be used in other controllers without having to copy-paste code \o/
 
